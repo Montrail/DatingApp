@@ -39,7 +39,7 @@ namespace DatingApp.API.Controllers
             };
 
             var createdUser = await _repo.Register(userToCreate, userForRegisterDto.Password);
-
+            // remove hardcoded status code 
             return StatusCode(201);
         }
 
